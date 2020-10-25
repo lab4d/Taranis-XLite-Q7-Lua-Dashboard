@@ -3,6 +3,7 @@
 -- farley <at> neonsurge __dot__ com
 -- From: https://github.com/AndrewFarley/Taranis-XLite-Q7-Lua-Dashboard
 -- Please feel free to submit issues, feedback, etc.
+-- crossfire battery telemetry sensor edit by Lab4D
 ----------------------------------------------------------
 
 
@@ -338,7 +339,8 @@ end
 
 local function drawVoltageText(start_x, start_y)
   -- First, try to get voltage from VFAS...
-  local voltage = getValue('VFAS')
+  local voltage = getValue('RxBt')
+  -- Default value "VFAS" - changed to "RxBt" for crossfire
   -- local voltage = getValue('Cels')   -- For miniwhoop seems more accurate
   -- TODO: if that failed, get voltage from somewhere else from my bigger quads?  Or rebind the voltage to VFAS?
   
