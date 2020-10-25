@@ -1,3 +1,9 @@
+# Edits
+
+The original script uses "VFAS" for voltage detection, i think thats a FrSky only telemtry value. It is not working for me on crossfire.
+Changed the value to "RxBt" to hopefully work for crossfire.
+Not yet tested!
+
 # Taranis-XLite-Q7-Lua-Dashboard
 A simple lua-based dashboard for the OpenTX XLite/QX7 Transmitters
 
